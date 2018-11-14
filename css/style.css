@@ -1,27 +1,25 @@
 .container{
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
+     max-width: 1170px;
+     width: 100%;
+     margin: 0 auto;
+     box-sizing: border-box;
+ }
 .container_logo{
     background-color: #f6f9f9;
     box-sizing: border-box;
 }
 .logo{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 100px;
+    padding: 32px 100px;
 }
-.header_image{
+.header_content{
+    padding-top: 217px;
     background-image: url("../images/content_image.png");
     background-size: cover;
+    overflow: hidden;
     text-align: center;
-    border: 1px solid white;                             /*!!!!*/
     box-sizing: border-box;
 }
 .header_h1{
-    margin-top: 217px;
     color: #ffffff;
     font: 700 120px/47px 'Lato', sans-serif;
     text-transform: uppercase;
@@ -49,6 +47,7 @@
     letter-spacing: 1px;
 }
 .header_button:hover{
+    cursor: pointer;
     border: 3px solid #15a4fa;
     background-color: #15a4fa;
     font-size: 20px;
@@ -60,8 +59,8 @@
 }
 .design{
     background-color: #f6f9f9;
+    overflow: hidden;
     text-align: center;
-    border: 1px solid white;                   /*!!!!!!!!!!!!!!!!!!!!*/
     box-sizing: border-box;
 }
 .section_header{
@@ -79,12 +78,16 @@
 }
 .feature{
     background-color: #ffffff;
+    overflow: hidden;
     box-sizing: border-box;
 }
 .flex1,.flex2,.flex3{
     display: flex;
     text-align: center;
     box-sizing: border-box;
+}
+.flex1{
+    justify-content: space-around;
 }
 .flex2{
     justify-content: center;
@@ -93,6 +96,7 @@
 }
 .flex3{
     justify-content: space-between;
+    padding: 30px 0;
 }
 .feature_header{
     margin: 20px 0;
@@ -104,15 +108,23 @@
     color: #999999;
     font: 400 15px/22px 'Lato', sans-serif;
 }
-.optimaze{
-    margin-right: 107px;
+.li_width{
+    width: 316px;
 }
-.minimal{
-    margin-right: 73px;
+.font_icon1,.font_icon2{
+    display: inline-block;
+    border-radius: 2px;
+    background: linear-gradient(to right, #48baff 50%,#5fc3ff 50%);
 }
-
+.font_icon1{
+    padding: 25px 35px;
+}
+.font_icon2{
+    padding: 30px;
+}
 .portfolio{
     background-color: #f6f9f9;
+    overflow: hidden;
     text-align: center;
     box-sizing: border-box;
 }
@@ -132,10 +144,16 @@
     right: 0;
     background-color: #15a4fa;
 }
-.p_image:hover .bicycle {
+.img{
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.p_image:hover .img {
+    cursor: pointer;
     opacity: 0.3;
 }
 .p_image:hover .buttons {
+    cursor: pointer;
     opacity: 0.6;
 }
 .zoom{
@@ -143,20 +161,32 @@
     top: 50%;
     left: 45%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    padding: 13px;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
 }
 .link{
     position: absolute;
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    padding: 13px;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+}
+.zoom:hover,.link:hover{
+    border: 1px solid #000080;
+    background-color: #0000CD;
 }
 .contact{
-    background-image: url(../images/stay.png);
+    background: linear-gradient(
+            rgba(45, 57, 80, 0.9),
+            rgba(45, 57, 80, 0.9)),
+            url(../images/stay.png)
+            center;
     background-size: cover;
+    overflow: hidden;
     text-align: center;
-    border: 1px solid #2d3950;
     box-sizing: border-box;
 }
 .contact_header{
@@ -206,17 +236,23 @@
     font: 400 18px/47px 'Lato', sans-serif;
 }
 .submit:hover{
+    cursor: pointer;
     border: 3px solid #15a4fa;
     background-color: #15a4fa;
 }
+.footer_content{
+    background-color: #f6f9f9;
+    overflow: hidden;
+}
 .copyrights{
-    margin: 40px 0;
     color: #999999;
     font: 400 15px 'Lato', sans-serif;
 }
+.social_icon{
+    margin: 0;
+}
 .social_icon li{
     display: inline-flex;
-    margin: 10px 0;
 }
 .facebook,.twitter,.google,.linkedin{
     padding: 10px 13px;
@@ -224,14 +260,18 @@
     background-color: #15a4fa;
 }
 .facebook:hover{
+    cursor: pointer;
     background-color: #3b5998;
 }
 .twitter:hover{
+    cursor: pointer;
     background-color: #55acee;
 }
 .google:hover{
+    cursor: pointer;
     background-color: #dd4b39;
 }
 .linkedin:hover{
+    cursor: pointer;
     background-color: #0976b4;
 }
