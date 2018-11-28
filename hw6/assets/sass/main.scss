@@ -1,0 +1,251 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+.about_me {
+  padding: 110px 100px;
+  background-color: #fff;
+}
+
+.about_text {
+  padding: 70px 0 50px 0;
+  .headering {
+    max-width: 325px;
+  }
+}
+
+.border {
+  width: 60px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid $primari-color;
+}
+
+.headering {
+  margin: 0;
+  color: $primari-color;
+  font: 700 46px $primari-font;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.about_me {
+  p {
+    margin: 0;
+    max-width: 480px;
+    color: $primari-color;
+    font: 400 16px $primari-font;
+  }
+}
+
+.about_me {
+  button {
+    width: 245px;
+    height: 50px;
+    margin-top: 35px;
+    border: 1px solid $primari-color;
+    color: $primari-color;
+    font: 500 16px $primari-font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: $hover-color;
+      cursor: pointer;
+      border: 2px solid $primari-color;
+    }
+  }
+}
+
+.about_img {
+  background-color: $primari-color;
+}
+
+.services {
+  padding: 110px 0;
+  text-align: center;
+  background-color: #f6f6f6;
+  .headering {
+    margin-bottom: 60px;
+  }
+}
+
+.services {
+  .border {
+    display: inline-flex;
+    margin-bottom: 10px;
+  }
+}
+
+.services {
+  p {
+    color: $primari-color;
+    font: 500 24px $primari-font;
+  }
+}
+
+.services {
+  ul {
+    li {
+      width: 31%;
+      margin: 1%;
+    }
+  }
+}
+
+.my_skills {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.my_skills {
+  .border {
+    display: inline-flex;
+  }
+}
+
+.scale_flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.scale_flex {
+  ul {
+    li {
+      margin-bottom: 50px;
+      color: $primari-color;
+      font: 400 15px $primari-font;
+    }
+  }
+}
+
+.skills_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .xd {
+    margin: 0 190px 0 auto;
+  }
+  .ae {
+    margin: 0 200px 0 0;
+  }
+  .ps {
+    margin: 0 180px 0 0;
+  }
+  .ai {
+    margin: 0 auto 0 1px;
+  }
+}
+
+.portfolio {
+  padding: 120px 0;
+  text-align: center;
+  background-color: #f6f6f6;
+  .border {
+    display: inline-flex;
+  }
+  .flex {
+    justify-content: center;
+    li {
+      position: relative;
+      max-width: 31%;
+      margin: 1%;
+    }
+    a{
+      display: inline-grid;
+      width: 56px;
+      height: 55px;
+      align-items: center;
+      text-align: center;
+      background-color: transparent;
+      position: absolute;
+      left: 160px;
+      bottom: 140px;
+      color: transparent;
+      &:hover{
+        background-color: $hover-color;
+        color: $primari-color;
+        border: 1px solid $primari-color;
+      }
+    }
+  }
+}
+
+.testimonial {
+  text-align: center;
+  padding: 120px 0;
+  .border {
+    display: inline-flex;
+  }
+  .testimonial_content {
+    max-width: 955px;
+    margin: 0 auto;
+    padding: 80px 0 100px 120px;
+    border: 1px solid $border-color;
+  }
+}
+
+.testimonial_flex {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  align-items: flex-start;
+  &:first-child {
+    margin-right: 30px;
+  }
+  h3 {
+    margin: 0;
+    color: $primari-color;
+    font: 500 30px $primari-font;
+    text-transform: uppercase;
+  }
+  span {
+    color: $primari-color;
+    font: italic 12px/49px $primari-font;
+    text-transform: uppercase;
+  }
+  p {
+    max-width: 569px;
+    margin: 0;
+    color: $primari-color;
+    font: 400 16px/26px $primari-font;
+  }
+}
+
+.carousal {
+  display: flex;
+  justify-content: center;
+  li {
+    width: 13px;
+    height: 13px;
+    margin: 50px 4px 0 4px;
+    border: 1px solid $border-color;
+  }
+  .focus {
+    background-color: $border-color;
+  }
+}
+
+.funcart {
+  margin-bottom: 150px;
+  padding: 50px 0 65px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+  text-align: center;
+  background-color: #f6f6f6;
+  img {
+    margin-bottom: 30px;
+  }
+  span {
+    display: block;
+    color: $primari-color;
+    font: 500 30px $primari-font;
+  }
+  p {
+    margin-bottom: 0;
+    color: $primari-color;
+    font: 400 22px $primari-font;
+    text-transform: uppercase;
+  }
+}
