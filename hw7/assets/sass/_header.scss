@@ -1,0 +1,33 @@
+@import "variables";
+
+.logo {
+  vertical-align: middle;
+  color: #333333;
+  font: 400 24px $primari-font;
+  text-transform: uppercase;
+  span {
+    color: $button-color;
+  }
+}
+
+.menu {
+  padding: 0;
+}
+
+.page_btn {
+  @media (max-width: #{$breakpoint}) {
+    margin-right: 5px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  margin-right: 20px;
+  background-color: $button-color;
+  color: #d4d4d4;
+  font: 700 17px $primari-font;
+  border-radius: 20px;
+}
+
+.nav-link {
+  color: #635c73;
+  font: 700 16px $primari-font;
+}
