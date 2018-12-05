@@ -1,0 +1,62 @@
+@import "variables";
+@import "fonts";
+
+.header {
+  display: flex;
+  position: absolute;
+  max-width: 940px;
+  max-height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  left: 50%;
+  margin-left: -470px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  margin: 10px 20px 0 0;
+  cursor: pointer;
+
+  div {
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: $first-text-color;
+  }
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  top: 60px;
+
+  li {
+    display: inline-block;
+    margin-right: 30px;
+
+    a {
+      color: $first-text-color;
+      font: 500 18px $primari-font;
+
+      &:hover {
+        border-bottom: 2px solid $first-text-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
