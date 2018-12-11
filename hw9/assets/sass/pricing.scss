@@ -1,0 +1,50 @@
+@import "variables";
+
+.pricing {
+  text-align: center;
+  padding: 100px 0 150px;
+
+  .pricing_flex-list {
+  align-items: flex-end;
+    margin-top: 90px;
+}
+
+  .pricing_section-header-paragraph1 {
+    &::after {
+      display: block;
+      width: 40px;
+      height: 2px;
+      content: "";
+      margin: 10px auto 0;
+      background-color: #000;
+    }
+  }
+
+  .pricing_section-header-paragraph2 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .pricing_flex-list-item {
+    flex-grow: 2;
+  }
+
+  .pricing_propose-header {
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 9px;
+  }
+
+  .pricing-list-item-up {
+    border: 1px solid #dddddd;
+    padding: 30px 0;
+  }
+
+  .pricing-list-item-down {
+    border: 1px solid #dddddd;
+    padding: 45px 0 35px;
+  }
+  .pricing_button {
+    margin-top: 40px;
+  }
+}

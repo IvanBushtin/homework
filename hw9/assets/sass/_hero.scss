@@ -1,0 +1,32 @@
+@import "variables";
+@import "container";
+@import "main_header";
+@import "paragraph";
+@import "button";
+@import "arrow";
+@import "section-header";
+
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, rgba(72, 85, 99, 0), rgba(41, 50, 60, 1)), url("../img/hero_bg.png") center;
+  background-size: cover;
+  opacity: 0.8;
+
+  .hero_container {
+    padding-top: 220px;
+  }
+
+  .hero_paragraph {
+    max-width: 625px;
+    margin: 0 auto;
+  }
+
+  .hero_button {
+    background-color: transparent;
+    margin: 35px 0 145px;
+  }
+
+  .hero_main-header {
+    margin: 0 0 30px;
+  }
+}
