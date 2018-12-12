@@ -1,0 +1,19 @@
+@import "variables";
+@import "container";
+@import "works-list";
+
+.work{
+  text-align: center;
+  padding: 100px 0;
+  .work_section-header-paragraph{
+    margin: 16px 0 80px;
+    &::after {
+      display: block;
+      width: 40px;
+      height: 2px;
+      content: "";
+      margin: 0 auto;
+      background-color: #000;
+    }
+  }
+}
